@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv{
+    width: 1100px;
+    margin: 50px auto;
+    background-color: #ddd;
+}
+.menu {
+    background-color: rgb(216, 131, 13);
+    
+}
+
+.menu .ul1 {
+    list-style: none;
+    text-align: center;
+}
+.menu .ul1 li {
+    display: inline-block;
+    margin-left: -4px;
+    position: relative;
+}
+.menu .ul1 li a{
+    display: inline-block;
+    padding: 50px 30px;
+    text-decoration: none;
+    color: rgb(253, 249, 249);
+    font-size: 20px;
+}
+.menu .ul1 li a:hover{
+    color: white;
+}
+
+/* Drop Doun Menu */
+
+.ul1 li .ul2{
+    width: 200px;
+    background-color: #222222;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.ul1 li:hover .ul2{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    transform-origin:bottom;
+
+}
+
+
+.ul1 li .ul2 li{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.ul1 li .ul2 li a{
+    display: block;
+    padding: 18px 0px;
+    border-bottom: 1px solid rgba(116, 106, 106, 0.507);
+
+}
+.ul1 li .ul2 li:hover a {
+    background-color: #4272D7;
+    color: white;
+    
+}
+
+/* slideer part */
+
+.slider{
+    background-image: url(https://jssors8.azureedge.net/demos/image-slider/img/faded-monaco-scenery-evening-dark-picjumbo-com-image.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0px;
+}
+.slider h1{
+    display: inline-block;
+    color: white;
+    padding: 10px 15px;
+
+
+}
+.slider p{
+    text-align: center;
+    color: white;
+    margin: 0px 15px;
+    font-size: 20px;
+}
+.slider a{
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* list item */
+
+.list{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    color: white;
+    background-color:black ;
+    padding: 20px 0px;
+}
+.footer .icon-menu ul{
+    text-align: center;
+    list-style: none;
+}
+.footer .icon-menu ul li{
+    display: inline-block;
+    margin-left:10px;
+}
+.footer .icon-menu ul li a{
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    background-color: #5EA5FA;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+}
+.footer .icon-menu ul li:hover a{
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
